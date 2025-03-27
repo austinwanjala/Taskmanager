@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Wear OS Device Feature -->
+    <uses-feature android:name="android.hardware.type.watch" />
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat">
+
+        <!-- Wearable Standalone App -->
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
+
+        <!-- Main Launcher Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Other Activities -->
+        <activity android:name=".AddTaskActivity" android:exported="false" />
+        <activity android:name=".ListTasksActivity" android:exported="false" />
+        <activity android:name=".EditTaskActivity" android:exported="false" />
+
+        <!-- Task Notification Receiver -->
+        <receiver
+            android:name=".TaskNotificationReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="SNOOZE_ACTION" />
+                <action android:name="EDIT_ACTION" />
+                <action android:name="DELETE_ACTION" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

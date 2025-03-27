@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Task Manager</string>
+    <string name="add_task">Add Task</string>
+    <string name="view_tasks">View Tasks</string>
+    <string name="task_id">Task ID</string>
+    <string name="task_name">Task Name</string>
+    <string name="due_date_time">Due Date &amp; Time</string>
+    <string name="save_task">Save Task</string>
+    <string name="edit">edit</string>
+    <string name="delete">delete</string>
+    <string name="snooze">snooze</string>
+    <string name="channel_name">Task Reminders</string>
+    <string name="channel_description">Notifications for your task reminders</string>
+    <string name="notification_title">Task Due: %s</string>
+    <string name="notification_content">Tap to view details</string>
+    <string name="snooze_confirmation_title">Task Snoozed</string>
+    <string name="snooze_confirmation_text">%s has been snoozed for %d minutes</string>
+    <string name="max_snoozes_title">Maximum Snoozes Reached</string>
+    <string name="max_snoozes_text">Cannot snooze %s anymore</string>
+    <string name="delete_confirmation_title">Task Deleted</string>
+    <string name="delete_confirmation_text">The task has been successfully removed</string>
+    <string name="task_not_found_title">Task Not Found</string>
+    <string name="task_not_found_text">The task no longer exists</string>
+    <string name="voice_input">Voice Input</string>
+    <string name="speak_now">Speak now</string>
+    <string name="voice_not_supported">Voice input not supported on this device</string>
+</resources>

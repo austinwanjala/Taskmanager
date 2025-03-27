@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <EditText
+        android:id="@+id/etTaskName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task"
+        android:textSize="8sp"
+        android:padding="2dp"/>
+
+    <EditText
+        android:id="@+id/etDueDateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date &amp; Time"
+        android:textSize="10sp"
+        android:padding="2dp"
+        android:layout_marginTop="4dp"/>
+
+    <Button
+        android:id="@+id/btnPickDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick"
+        android:textSize="9sp"
+        android:minWidth="40dp"
+        android:minHeight="28dp"
+        android:padding="2dp"
+        android:layout_marginTop="4dp"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textSize="9sp"
+        android:minHeight="28dp"
+        android:padding="2dp"
+        android:layout_marginTop="4dp"/>
+</LinearLayout>

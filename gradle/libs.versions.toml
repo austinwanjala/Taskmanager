@@ -1,0 +1,19 @@
+[versions]
+androidGradlePlugin = "8.3.0"          # Update to latest stable version
+playServicesWearable = "18.1.0"        # Minor update
+wear = "1.3.0"                        # Latest stable version
+wearInput = "1.1.0"                    # No change needed
+recyclerview = "1.3.1"                 # Updated version
+constraintlayout = "2.1.4"             # Latest stable version
+material = "1.9.0"                     # Latest Material Design version
+
+[libraries]
+play-services-wearable = { group = "com.google.android.gms", name = "play-services-wearable", version.ref = "playServicesWearable" }
+wear = { group = "androidx.wear", name = "wear", version.ref = "wear" }
+wear-input = { group = "androidx.wear", name = "wear-input", version.ref = "wearInput" }
+recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }

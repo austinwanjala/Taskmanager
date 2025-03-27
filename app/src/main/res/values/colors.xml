@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Purple Color -->
+    <color name="purple_500">#673AB7</color>
+    <color name="purple_700">#5E35B1</color>
+
+    <!-- Red Color for Delete Button -->
+    <color name="red_500">#F44336</color>
+    <color name="red_700">#D32F2F</color>
+
+    <!-- Other Useful Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray_200">#EEEEEE</color>
+    <color name="gray_500">#9E9E9E</color>
+
+    <!-- Notification Colors -->
+    <color name="notification_important">#FF5252</color>
+    <color name="notification_normal">#4CAF50</color>
+</resources>
